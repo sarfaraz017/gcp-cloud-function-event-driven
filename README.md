@@ -33,7 +33,11 @@ Event → Google Service → Cloud Function → Cloud Logging
 Enable APIs:
 
 ```
-    gcloud services enable cloudfunctions.googleapis.com eventarc.googleapis.com pubsub.googleapis.com firestore.googleapis.com storage.googleapis.com
+    gcloud services enable cloudfunctions.googleapis.com \
+    eventarc.googleapis.com \
+    pubsub.googleapis.com \
+    firestore.googleapis.com \
+    storage.googleapis.com
 ```
 
 ---
@@ -43,7 +47,7 @@ Enable APIs:
 ## Create Topic
 
 ```
-gcloud pubsub topics create orders-topic
+    gcloud pubsub topics create orders-topic
 ```
 
 ## Deploy Function
