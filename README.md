@@ -115,11 +115,10 @@ Ensure Firestore is created in Native mode:
 
 ## Test
 
-    ```
+```
     gcloud firestore documents create users/user1 --fields=name=Sarfaraz,age=30
 ```
 
----
 
 # 🧹 Cleanup
 
